@@ -1,13 +1,16 @@
 {
   "name": "profile",
   "version": "0.0.0",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:images": "imagemin public/**/* --out-dir=dist/",
     "serve": "vite preview",
     "start": "npm run dev"
   },
   "devDependencies": {
+    "imagemin-cli": "^6.0.0",
     "vite": "^2.3.3"
   },
   "dependencies": {
